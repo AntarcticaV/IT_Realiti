@@ -5,6 +5,8 @@ public class MonoPackageManager_Resources {
 		"ICS.Android.dll",
 		"FormsViewGroup.dll",
 		"ICS.dll",
+		"NativeMedia.dll",
+		"NativeMedia.Permision.dll",
 		"Xamarin.AndroidX.Activity.dll",
 		"Xamarin.AndroidX.Annotation.dll",
 		"Xamarin.AndroidX.Annotation.Experimental.dll",

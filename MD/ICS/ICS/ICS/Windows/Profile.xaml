@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ICS.Windows.Profile"
+             NavigationPage.HasNavigationBar="False">
+
+        <StackLayout>
+            <StackLayout Orientation="Vertical" Margin="20,10,20,0">
+                <StackLayout  >
+                    <Label x:Name="SurnameLabel" Text="Фамилия:" TextColor="White"/>
+                    <Frame CornerRadius="60" Padding="20,0,20,0" BackgroundColor="Black">
+                        <Entry x:Name="SurnameEntry" TextColor="White"/>
+                    </Frame>
+                </StackLayout>
+                <StackLayout Margin="0,10,0,0" >
+                    <Label x:Name="NameLabel" Text="Имя:" TextColor="White"/>
+                    <Frame CornerRadius="60" Padding="20,0,20,0" BackgroundColor="Black">
+                        <Entry x:Name="NameEntry" TextColor="White" />
+                    </Frame>
+                </StackLayout>
+                <StackLayout  Margin="0,10,0,0">
+                    <Label x:Name="PLabel" Text="Отчество:" TextColor="White"/>
+                    <Frame CornerRadius="60" Padding="20,0,20,0" BackgroundColor="Black">
+                        <Entry x:Name="PatronymicEntry" TextColor="White" />
+                    </Frame>
+                </StackLayout>
+                <StackLayout Margin="0,10,0,0">
+                    <Label x:Name="PasswordLabel" Text="Пароль:" TextColor="White"/>
+                        <Frame CornerRadius="60" Padding="20,0,20,0" BackgroundColor="Black">
+                    <Entry x:Name="PasswordEntry" IsPassword="True" TextColor="White" />
+                    </Frame>
+                </StackLayout>
+                <StackLayout Margin="0,10,0,0">
+                    <Label x:Name="ConPasswordLabel" Text="Подтвердить пароль:" TextColor="White"/>
+                    <Frame CornerRadius="60" Padding="20,0,20,0" BackgroundColor="Black">
+                        <Entry x:Name="ConPasswordEntry" IsPassword="True" TextColor="White" />
+                    </Frame>
+                </StackLayout>
+                <StackLayout Margin="0,10,0,0">
+                    <Label x:Name="AdresLabel" Text="Адрес:" TextColor="White"/>
+                    <Frame CornerRadius="60" Padding="20,0,20,0" BackgroundColor="Black">
+                        <Entry x:Name="AddressEntry" TextColor="White" />
+                    </Frame>
+                </StackLayout>
+                <StackLayout Margin="0,10,0,0" >
+                    <StackLayout Orientation="Horizontal">
+                        <Label x:Name="ImageLabel" Text="Выбор картинки:" TextColor="White"/>
+                        <Label x:Name="NameImageLabel" IsVisible="False" TextColor="White"/>
+                    </StackLayout>
+
+                    <StackLayout  HorizontalOptions="FillAndExpand">
+                        <Frame CornerRadius="90" Padding="20" BackgroundColor="Black" >
+                            <Image x:Name="image" Source="imageGif.gif" IsAnimationPlaying="True">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer
+                                        Tapped="OnImageChange"
+                                        NumberOfTapsRequired="1" />
+                                </Image.GestureRecognizers>
+                        </Image>
+                        </Frame>
+                        <!-- <Button x:Name="ImageChangeButton" CornerRadius="60"  ImageSource="image.png"/> -->
+                    </StackLayout>
+
+                </StackLayout>
+                <Button x:Name="SaveButton" Text="Сохранить изменения" Margin="0,20,0,20" CornerRadius="60"/>
+            </StackLayout> 
+        </StackLayout>
+
+</ContentPage>

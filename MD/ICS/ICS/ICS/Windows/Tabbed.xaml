@@ -7,14 +7,14 @@
             BackgroundColor="#131415"
             >
   <!--Pages can be added as references or inline-->
-    <NavigationPage  Title="Профиль">
-        <x:Arguments>
-            <local:Profil />
-        </x:Arguments>
-    </NavigationPage>
-    <NavigationPage Title="Диалоговое окно" >
+    <NavigationPage  Title="Диалоговое окно">
         <x:Arguments>
             <local:DialogPage />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Профиль" >
+        <x:Arguments>
+            <local:Profile />
         </x:Arguments>
     </NavigationPage>
 </TabbedPage>
