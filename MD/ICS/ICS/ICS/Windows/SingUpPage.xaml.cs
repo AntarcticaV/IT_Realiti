@@ -16,5 +16,17 @@ namespace ICS.Windows
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private async void OnClickedSaveUserButton(object sender, EventArgs e)
+        {
+
+            await Navigation.PushAsync(new Tabbed());
+        }
+
+        private async void OnClickedBackButton(object sender, EventArgs e)
+        {
+            await Navigation.PopAsync();
+        }
+
+    }
 }

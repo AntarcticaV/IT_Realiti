@@ -11,7 +11,7 @@
             <StackLayout Margin="20,0,20,0" >
                 <Label x:Name="LoginLabel" Text="Логин:" TextColor="White"/>
                 <Frame CornerRadius="60" Padding="20,0,20,0" BackgroundColor="Black">
-                    <Entry x:Name="LoginEbtry" TextColor="White"/>
+                    <Entry x:Name="LoginEbtry" Keyboard="Numeric" TextColor="White"/>
                 </Frame>
             </StackLayout>
             <StackLayout Margin="20" >
